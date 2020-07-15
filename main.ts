@@ -1,13 +1,13 @@
 input.onButtonPressed(Button.A, function () {
-    if (x < 0) {
-        if (x < 0) {
+    if (y >= 0) {
+        if (x > 0) {
             led.unplot(x, y)
             x += -1
             led.plot(x, y)
         } else {
             led.unplot(x, y)
             y += -1
-            x = 0
+            x = 4
             led.plot(x, y)
         }
     } else {
@@ -36,7 +36,7 @@ input.onButtonPressed(Button.B, function () {
 })
 let x = 0
 let y = 0
-y = 0
+y = 2
 x = 2
 led.plot(x, y)
 basic.forever(function () {
